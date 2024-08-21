@@ -34,7 +34,7 @@ jobs:
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
           npm run build
-          touch ./dist/.nojekyll
+          ls -la
 
       # Push to your pages repo
       - name: Deploy frontend
@@ -43,7 +43,7 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'dist'
+          source-directory: 'frontend'
           destination-github-username: 'senoramarillo'
           destination-repository-name: 'kickbase-information'
           user-email: 'github-actions[bot]@users.noreply.github.com'
