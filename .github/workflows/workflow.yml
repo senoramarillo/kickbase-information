@@ -44,9 +44,7 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'dist'
-          destination-github-username: 'github-actions[bot]'
+          destination-github-username: 'senoramarillo'
           destination-repository-name: ${{ github.repository }}
           user-email: 'github-actions[bot]@users.noreply.github.com'
-          user-name: 'github-actions[bot]'
-          commit-message: Deploy ORIGIN_COMMIT
           target-branch: gh-pages
