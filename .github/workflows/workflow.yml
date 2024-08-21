@@ -28,7 +28,7 @@ jobs:
 
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build frontend
-        working-directory: frontend/
+        working-directory: ../frontend/
         env:
           KB_EMAIL: ${{ secrets.KB_EMAIL }}
           KB_PW: ${{ secrets.KB_PW }}
@@ -39,7 +39,7 @@ jobs:
           touch ./dist/.nojekyll
 
       - name: Deploy frontend
-        working-directory: frontend/
+        working-directory: ../frontend/
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
