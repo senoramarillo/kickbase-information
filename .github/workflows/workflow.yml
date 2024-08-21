@@ -2,10 +2,6 @@
 
 # Edit your project details here.
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
-env:
-  githubEmail: test@test.com
-  deployToRepo: kickbase-information
-
 name: Github Pages Astro CI
 
 on:
@@ -39,11 +35,13 @@ jobs:
           KB_PW: ${{ secrets.KB_PW }}
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
-          npm run build
+          ls -la
+          CI=false && npm run build --if-present
           touch ./dist/.nojekyll
 
       # Push to your pages repo
       - name: Deploy frontend
+        working-directory: frontend/
         env:
           user_name: 'github-actions[bot]'
           user_email: 'github-actions[bot]@users.noreply.github.com'
