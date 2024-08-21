@@ -22,7 +22,8 @@ jobs:
 
       # Install dependencies with npm
       - name: Install dependencies
-        run: npm install
+        working-directory: frontend/
+        run: npm ci
 
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build frontend
