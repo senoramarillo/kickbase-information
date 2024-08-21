@@ -27,9 +27,8 @@ jobs:
           KB_PW: ${{ secrets.KB_PW }}
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
-          npm ci
-          CI=false && npm run build --if-present
-          touch ./dist/.nojekyll
+          npm install
+          npm run build
 
       - name: Deploy frontend
         working-directory: frontend/
@@ -42,4 +41,4 @@ jobs:
           git config --global user.name $user_name
           git config --global user.email $user_email
           git remote set-url origin https://${github_token}@github.com/${repository}
-          npm run deploy
+          npx gh-pages -d build
