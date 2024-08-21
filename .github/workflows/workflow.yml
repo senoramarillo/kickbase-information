@@ -24,6 +24,16 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
+      # Install dependencies with npm
+      - name: Install dependencies
+        run: if [ -e yarn.lock ]; then
+          yarn install --frozen-lockfile
+          elif [ -e package-lock.json ]; then
+          npm ci
+          else
+          npm i
+          fi
+
       # Build the project and add .nojekyll file to supress default behaviour
       - name: Build
         env:
@@ -31,7 +41,7 @@ jobs:
           KB_PW: ${{ secrets.KB_PW }}
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
-          npm ci
+          ls -la
           CI=false && npm run build --if-present
           touch ./dist/.nojekyll
 
