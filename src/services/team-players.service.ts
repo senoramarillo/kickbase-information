@@ -1,3 +1,4 @@
+// @ts-ignore
 import inactivePlayers from '../data/all_inactive_players.json';
 import { PlayerListItem, playerListItemFromApiResponse } from '../models/player-list-item';
 

@@ -125,7 +125,6 @@ export class PlayerListItemComponent extends LitElement {
   public data: PlayerListItem;
 
   protected render(): TemplateResult {
-      console.log(this.data.playerName);
     return html`
       <a class="root" href=${`${BASE_PATH_WITHOUT_DOMAIN}/player/${this.data.playerName}/${this.data.playerId}`}>
         <div class="left">

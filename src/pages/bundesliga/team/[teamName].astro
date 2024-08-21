@@ -13,7 +13,6 @@ const { params } = Astro;
 
 export async function getStaticPaths() {
   const bundesligaTable: BundesligaTable = await bundesligaTableService.getData();
-  console.log("BundesligaData:", (await bundesligaTableService.getData()).teams);
   const teams: { params: { teamName: string } }[] = bundesligaTable.teams.map((team: BundesligaTableEntry) => {
     return { params: { teamName: team.teamName } };
   });

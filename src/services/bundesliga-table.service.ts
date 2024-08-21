@@ -1,22 +1,10 @@
-import { BundesligaTable, BundesligaTableEntry, bundesligaTableEntryFromApiResponse } from '../models/bundesliga-table';
+import { BundesligaTable, BundesligaTableEntry } from '../models/bundesliga-table';
 
 export class BundesligaTableService {
   public async getData(): Promise<BundesligaTable> {
-    // TODO: The path `/competition/table` of the kickbase api doesnt work anymore.
-    // TODO: This should be fixed but for now we just mock the response.
+    // The path `/competition/table` of the kickbase api doesnt work anymore.
+    // This should be fixed but for now we just mock the response.
     return this.mockData();
-
-    // const url: string = `https://api.better-kickbase.workers.dev/competition/table`;
-    // const response: Response = await fetch(url, this.default_opts);
-    // const rawTableData: any = await response.json();
-    // const teams: BundesligaTableEntry[] = rawTableData.t.map(bundesligaTableEntryFromApiResponse);
-
-    // const bundesligaTable: BundesligaTable = {
-    //   matchDay: rawTableData.md,
-    //   currentMatchDay: rawTableData.cmd,
-    //   teams
-    // };
-    // return bundesligaTable;
   }
 
   private mockData(): BundesligaTable {

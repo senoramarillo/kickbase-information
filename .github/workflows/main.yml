@@ -3,8 +3,8 @@
 # Edit your project details here.
 # Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 env:
-  githubEmail: felixs@fh-muenster.de
-  deployToRepo: better-kickbase-web
+  githubEmail: test@test.com
+  deployToRepo: kickbase-information
 
 name: Github Pages Astro CI
 

@@ -10,12 +10,12 @@ const teamIds: string[] = bundesligaTable.teams.map((team: BundesligaTableEntry)
 teamIds.push('INACTIVE_PLAYERS');
 
 const deepPlayerData: PlayerListItem[][] = await Promise.all(
-  teamIds.map((teamId: string) => teamPlayerService.getData(teamId))
+    teamIds.map((teamId: string) => teamPlayerService.getData(teamId))
 );
 
-const playerData = deepPlayerData.flat();
-const playersGroupedByTeam = {};
-playerData.forEach(player => {
+const playerData: PlayerListItem[] = deepPlayerData.flat();
+const playersGroupedByTeam: { [key: string]: PlayerListItem[] } = {};
+playerData.forEach((player: PlayerListItem) => {
   if (player.teamName in playersGroupedByTeam) {
     playersGroupedByTeam[player.teamName].push(player);
   } else {
@@ -24,12 +24,11 @@ playerData.forEach(player => {
 });
 
 let sitecontent: string = '';
-Object.entries(playersGroupedByTeam).forEach(([team, players]) => {
+Object.entries(playersGroupedByTeam).forEach(([team, players]: [string, PlayerListItem[]]) => {
   let playersString = '';
-  players.forEach(
-    player =>
+  players.forEach((player: PlayerListItem) =>
       (playersString += `<li><a href="${BASE_PATH_WITHOUT_DOMAIN}/player/${encodeURIComponent(
-        player.playerName
+          player.playerName
       )}/${encodeURIComponent(player.playerId)}">${player.playerName}</a></li>`)
   );
   sitecontent += `
@@ -43,16 +42,16 @@ Object.entries(playersGroupedByTeam).forEach(([team, players]) => {
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="icon" type="image/x-icon" href={favIcon} />
-    <title>Startseite better-kickbase</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="description" content="better-kickbase-web Startseite" />
-  </head>
-  <body>
-    <h1>better-kickbase</h1>
-    <p>Schau dir die Profile dieser Spieler an:</p>
+<head>
+  <link rel="icon" type="image/x-icon" href={favIcon} />
+  <title>kickbase-information</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="better-kickbase-web Startseite" />
+</head>
+<body>
+<h1>kickbase-information</h1>
+<p>Schau dir die Profile dieser Spieler an:</p>
 
-    <Fragment set:html={sitecontent} />
-  </body>
+<Fragment set:html={sitecontent} />
+</body>
 </html>
