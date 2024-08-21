@@ -87,15 +87,15 @@ export class PlayerPointsMatchComponent extends LitElement {
    * The highest points the player has ever scored.
    * Is used to determine how to render the bars.
    */
-  @property({ type: Number, attribute: 'max-points' })
-  private maxPoints: number = 0;
+  // @property({ type: Number, attribute: 'max-points' })
+  // private maxPoints: number = 625;
 
   @property({ type: Object })
   public match: PlayerMatch | PlayerUpcomingMatch;
 
   protected render(): TemplateResult {
     const color: string = this.match.points >= 100 ? '#25c28b' : '#ea5f42';
-    const percentage: string = `${Math.round((this.match.points / this.maxPoints) * 100)}%`;
+    const percentage: string = `${Math.round((this.match.points / 625) * 100)}%`;
 
     const matchBarStyles: StyleInfo = {
       background: `linear-gradient(to top, ${color}, ${color}, ${percentage}, #f5f7f6, ${percentage}, #f5f7f6)`
