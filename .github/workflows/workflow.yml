@@ -15,11 +15,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup node
-        uses: actions/setup-node@v3
-        with:
-          node-version: 18
+      # Install dependencies with npm
+      - name: Install dependencies
+        run: npm ci
 
+      # Build the project and add .nojekyll file to supress default behaviour
       - name: Build frontend
         working-directory: frontend/
         env:
@@ -27,18 +27,19 @@ jobs:
           KB_PW: ${{ secrets.KB_PW }}
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
-          npm install
           npm run build
+          touch ./dist/.nojekyll
 
+      # Push to your pages repo
       - name: Deploy frontend
-        working-directory: frontend/
+        uses: cpina/github-action-push-to-another-repository@main
         env:
-          user_name: 'github-actions[bot]'
-          user_email: 'github-actions[bot]@users.noreply.github.com'
           github_token: ${{ secrets.API_TOKEN_GITHUB }}
-          repository: ${{ github.repository }}
-        run: |
-          git config --global user.name $user_name
-          git config --global user.email $user_email
-          git remote set-url origin https://${github_token}@github.com/${repository}
-          npx gh-pages -d build
+        with:
+          source-directory: 'dist'
+          destination-github-username: 'github-actions[bot]'
+          destination-repository-name: ${{ github.repository }}
+          user-email: 'github-actions[bot]@users.noreply.github.com'
+          user-name: 'github-actions[bot]'
+          commit-message: Deploy ORIGIN_COMMIT
+          target-branch: gh-pages
