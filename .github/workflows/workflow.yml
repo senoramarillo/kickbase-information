@@ -43,7 +43,7 @@ jobs:
           SSH_DEPLOY_KEY: ${{ secrets.SSH_DEPLOY_KEY }}
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
-          source-directory: 'frontend'
+          source-directory: 'frontend/dist'
           destination-github-username: 'senoramarillo'
           destination-repository-name: 'kickbase-information'
           user-email: 'github-actions[bot]@users.noreply.github.com'
