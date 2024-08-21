@@ -1,32 +1,25 @@
-# Workflow to build and deploy to your GitHub Pages repo.
-
-# Edit your project details here.
-# Remember to add API_TOKEN_GITHUB in repo Settings > Secrets as well!
 name: Github Pages Astro CI
 
 on:
-  # Allows you to run this workflow manually from the Actions tab.
-  # Triggers the workflow on push and pull request events but only for the main branch
   workflow_dispatch:
   push:
     branches: [main]
-  # pull_request:
-  #   branches: [main]
   schedule:
     - cron: "30 21 * * *" # every day at 21:30 UTC (= 22:30 CET)
 
 jobs:
   combined-workflow:
-
     runs-on: ubuntu-latest
 
     steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
       - name: Setup node
         uses: actions/setup-node@v3
         with:
           node-version: 18
 
-      # Build the project and add .nojekyll file to supress default behaviour
       - name: Build frontend
         working-directory: frontend/
         env:
