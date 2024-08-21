@@ -7,7 +7,7 @@ import { BundesligaTableEntry, BundesligaTable } from '../models/bundesliga-tabl
 import { PlayerListItem } from '../models/player-list-item';
 const bundesligaTable: BundesligaTable = await bundesligaTableService.getData();
 const teamIds: string[] = bundesligaTable.teams.map((team: BundesligaTableEntry) => team.teamId);
-teamIds.push('INACTIVE_PLAYERS');
+// teamIds.push('INACTIVE_PLAYERS');
 
 const deepPlayerData: PlayerListItem[][] = await Promise.all(
     teamIds.map((teamId: string) => teamPlayerService.getData(teamId))
@@ -50,7 +50,6 @@ Object.entries(playersGroupedByTeam).forEach(([team, players]: [string, PlayerLi
 </head>
 <body>
 <h1>kickbase-information</h1>
-<p>Schau dir die Profile dieser Spieler an:</p>
 
 <Fragment set:html={sitecontent} />
 </body>
