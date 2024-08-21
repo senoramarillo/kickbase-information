@@ -44,7 +44,6 @@ jobs:
           API_TOKEN_GITHUB: ${{ secrets.API_TOKEN_GITHUB }}
         with:
           source-directory: 'dist'
-          destination-github-username: 'senoramarillo'
           destination-repository-name: ${{ github.repository }}
           user-email: 'github-actions[bot]@users.noreply.github.com'
           target-branch: gh-pages
