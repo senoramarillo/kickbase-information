@@ -31,7 +31,6 @@ jobs:
           KB_PW: ${{ secrets.KB_PW }}
           KB_LEAGUE_ID: ${{ secrets.KB_LEAGUE_ID }}
         run: |
-          ls -la
           npm ci
           CI=false && npm run build --if-present
           touch ./dist/.nojekyll
