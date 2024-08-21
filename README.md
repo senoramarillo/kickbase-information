@@ -12,6 +12,15 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
 </div>
 
+# How to setup
+
+### Frontend
+- **Install dependencies:**
+    - `npm install` Install the dependencies
+- **Run frontend:**
+    - `npm start` Start the development server
+    - Frontend will be reachable under http://localhost:3000/
+
 ### Thanks to
 - [@FelixSchuSi](https://github.com/FelixSchuSi) for the base of the frontend
 
