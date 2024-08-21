@@ -97,7 +97,7 @@ var x = new DOMParser()
 (!x || !x.shadowRoot) && g();
 </script></head>
   <body style="padding:0 !important;">
-    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="2kUxgj" component-url="/kickbase-information/player.page.580826af.js" ssr="" client="idle" before-hydration-url="/kickbase-information/chunks/astro_scripts/before-hydration.js.faae8adf.js" opts="{&quot;name&quot;:&quot;PlayerPage&quot;,&quot;value&quot;:true}" await-children=""><bkb-player player-name="Tymoteusz Puchacz" player-id="3020" team-id="51" server-json-data="{&quot;playerInfo&quot;:{&quot;iposl&quot;:false,&quot;id&quot;:&quot;3020&quot;,&quot;teamId&quot;:&quot;51&quot;,&quot;teamName&quot;:&quot;Kiel&quot;,&quot;teamSymbol&quot;:&quot;KSV&quot;,&quot;firstName&quot;:&quot;Tymoteusz&quot;,&quot;lastName&quot;:&quot;Puchacz&quot;,&quot;profileBig&quot;:&quot;https://kickbase.b-cdn.net/pool/playersbig/3020.png&quot;,&quot;stlas&quot;:false,&quot;status&quot;:0,&quot;position&quot;:2,&quot;number&quot;:27,&quot;averagePoints&quot;:0,&quot;totalPoints&quot;:0,&quot;marketValue&quot;:5917225,&quot;marketValueTrend&quot;:1},&quot;playerPoints&quot;:{&quot;seasons&quot;:[{&quot;points&quot;:25,&quot;appearances&quot;:1,&quot;startingEleven&quot;:1,&quot;matches&quot;:[{&quot;match&quot;:12,&quot;points&quot;:25,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:3576,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:40,&quot;awayTeamId&quot;:15,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1}],&quot;year&quot;:&quot;2022/2023&quot;},{&quot;points&quot;:2572,&quot;appearances&quot;:31,&quot;startingEleven&quot;:30,&quot;matches&quot;:[{&quot;match&quot;:1,&quot;points&quot;:21,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:2163,&quot;startingEleven&quot;:false,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:39,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:2,&quot;points&quot;:-9,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:2410,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:8,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:0},{&quot;match&quot;:3,&quot;points&quot;:105,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:6124,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:77,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:4,&quot;points&quot;:86,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6129,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:29,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:5,&quot;points&quot;:258,&quot;goals&quot;:1,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5971,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:16,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:6,&quot;points&quot;:62,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6046,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:27,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:7,&quot;points&quot;:141,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5795,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:23,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:8,&quot;points&quot;:127,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6228,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:76,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:9,&quot;points&quot;:57,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:4385,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:17,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:12,&quot;points&quot;:89,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:6118,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:19,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:13,&quot;points&quot;:24,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5898,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:75,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:14,&quot;points&quot;:45,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5797,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:51,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:15,&quot;points&quot;:37,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5838,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:48,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:16,&quot;points&quot;:60,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5833,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:20,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:17,&quot;points&quot;:-11,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:4417,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:21,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:18,&quot;points&quot;:-21,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5086,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:39,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:0},{&quot;match&quot;:19,&quot;points&quot;:95,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5524,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:8,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:20,&quot;points&quot;:24,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5138,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:77,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:21,&quot;points&quot;:65,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5077,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:29,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:22,&quot;points&quot;:94,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6950,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:16,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:24,&quot;points&quot;:184,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6017,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:23,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:25,&quot;points&quot;:192,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5871,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:76,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:26,&quot;points&quot;:53,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5939,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:17,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:27,&quot;points&quot;:89,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5910,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:12,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:28,&quot;points&quot;:87,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5848,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:6,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:29,&quot;points&quot;:8,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5919,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:19,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:30,&quot;points&quot;:48,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5793,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:75,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:31,&quot;points&quot;:207,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5911,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:51,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:32,&quot;points&quot;:133,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5849,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:48,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:33,&quot;points&quot;:34,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5833,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:20,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:34,&quot;points&quot;:188,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5721,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:21,&quot;homeTeamGoals&quot;:5,&quot;awayTeamGoals&quot;:0}],&quot;year&quot;:&quot;2023/2024&quot;}]},&quot;playerStats&quot;:{&quot;averagePoints&quot;:0,&quot;f&quot;:false,&quot;firstName&quot;:&quot;Tymoteusz&quot;,&quot;id&quot;:&quot;3020&quot;,&quot;lastName&quot;:&quot;Puchacz&quot;,&quot;marketValue&quot;:5917225,&quot;mvHigh&quot;:5917225,&quot;mvHighDate&quot;:&quot;2024-08-21T00:00:00.000Z&quot;,&quot;mvLow&quot;:500000,&quot;mvLowDate&quot;:&quot;2022-12-22T00:00:00.000Z&quot;,&quot;mvTrend&quot;:1,&quot;upcomingMatches&quot;:[{&quot;day&quot;:&quot;2024-08-24T13:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;14&quot;,&quot;homeTeamName&quot;:&quot;Hoffenheim&quot;,&quot;homeTeamNameShort&quot;:&quot;TSG&quot;,&quot;awayTeamId&quot;:&quot;51&quot;,&quot;awayTeamName&quot;:&quot;Kiel&quot;,&quot;awayTeamNameShort&quot;:&quot;KSV&quot;,&quot;match&quot;:1,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1},{&quot;day&quot;:&quot;2024-08-31T13:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;51&quot;,&quot;homeTeamName&quot;:&quot;Kiel&quot;,&quot;homeTeamNameShort&quot;:&quot;KSV&quot;,&quot;awayTeamId&quot;:&quot;11&quot;,&quot;awayTeamName&quot;:&quot;Wolfsburg&quot;,&quot;awayTeamNameShort&quot;:&quot;WOB&quot;,&quot;match&quot;:2,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1},{&quot;day&quot;:&quot;2024-09-14T16:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;51&quot;,&quot;homeTeamName&quot;:&quot;Kiel&quot;,&quot;homeTeamNameShort&quot;:&quot;KSV&quot;,&quot;awayTeamId&quot;:&quot;2&quot;,&quot;awayTeamName&quot;:&quot;Bayern&quot;,&quot;awayTeamNameShort&quot;:&quot;FCB&quot;,&quot;match&quot;:3,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1}],&quot;number&quot;:27,&quot;points&quot;:0,&quot;position&quot;:2,&quot;seasons&quot;:[{&quot;seasonId&quot;:&quot;15&quot;,&quot;season&quot;:&quot;2022/2023&quot;,&quot;points&quot;:25,&quot;matches&quot;:1,&quot;startMatches&quot;:1,&quot;secondsPlayed&quot;:3576,&quot;secondsPerGoal&quot;:0,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;redCards&quot;:0,&quot;yellowCards&quot;:0,&quot;goalFree&quot;:0,&quot;defensivePoints&quot;:0,&quot;offensivePoints&quot;:0,&quot;generalPoints&quot;:0,&quot;teamPoints&quot;:0,&quot;goalKeeperPoints&quot;:0,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0},{&quot;seasonId&quot;:&quot;14&quot;,&quot;season&quot;:&quot;2021/2022&quot;,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0},{&quot;seasonId&quot;:&quot;20&quot;,&quot;season&quot;:&quot;2023/2024&quot;,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0}],&quot;status&quot;:0,&quot;teamId&quot;:&quot;51&quot;,&quot;userFlags&quot;:0}}"><template shadowroot="open"><style>
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z9CuIL" component-url="/kickbase-information/player.page.9988ca15.js" ssr="" client="idle" before-hydration-url="/kickbase-information/chunks/astro_scripts/before-hydration.js.faae8adf.js" opts="{&quot;name&quot;:&quot;PlayerPage&quot;,&quot;value&quot;:true}" await-children=""><bkb-player player-name="Tymoteusz Puchacz" player-id="3020" team-id="51" server-json-data="{&quot;playerInfo&quot;:{&quot;iposl&quot;:false,&quot;id&quot;:&quot;3020&quot;,&quot;teamId&quot;:&quot;51&quot;,&quot;teamName&quot;:&quot;Kiel&quot;,&quot;teamSymbol&quot;:&quot;KSV&quot;,&quot;firstName&quot;:&quot;Tymoteusz&quot;,&quot;lastName&quot;:&quot;Puchacz&quot;,&quot;profileBig&quot;:&quot;https://kickbase.b-cdn.net/pool/playersbig/3020.png&quot;,&quot;stlas&quot;:false,&quot;status&quot;:0,&quot;position&quot;:2,&quot;number&quot;:27,&quot;averagePoints&quot;:0,&quot;totalPoints&quot;:0,&quot;marketValue&quot;:5917225,&quot;marketValueTrend&quot;:1},&quot;playerPoints&quot;:{&quot;seasons&quot;:[{&quot;points&quot;:25,&quot;appearances&quot;:1,&quot;startingEleven&quot;:1,&quot;matches&quot;:[{&quot;match&quot;:12,&quot;points&quot;:25,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:3576,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:40,&quot;awayTeamId&quot;:15,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1}],&quot;year&quot;:&quot;2022/2023&quot;},{&quot;points&quot;:2572,&quot;appearances&quot;:31,&quot;startingEleven&quot;:30,&quot;matches&quot;:[{&quot;match&quot;:1,&quot;points&quot;:21,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:2163,&quot;startingEleven&quot;:false,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:39,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:2,&quot;points&quot;:-9,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:2410,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:8,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:0},{&quot;match&quot;:3,&quot;points&quot;:105,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:6124,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:77,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:4,&quot;points&quot;:86,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6129,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:29,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:5,&quot;points&quot;:258,&quot;goals&quot;:1,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5971,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:16,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:6,&quot;points&quot;:62,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6046,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:27,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:7,&quot;points&quot;:141,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5795,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:23,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:8,&quot;points&quot;:127,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6228,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:76,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:9,&quot;points&quot;:57,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:4385,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:17,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:12,&quot;points&quot;:89,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:6118,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:19,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:13,&quot;points&quot;:24,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5898,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:75,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:14,&quot;points&quot;:45,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5797,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:51,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:15,&quot;points&quot;:37,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5838,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:48,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:16,&quot;points&quot;:60,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5833,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:20,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:17,&quot;points&quot;:-11,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:4417,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:21,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:18,&quot;points&quot;:-21,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5086,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:39,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:0},{&quot;match&quot;:19,&quot;points&quot;:95,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5524,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:8,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:20,&quot;points&quot;:24,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5138,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:77,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:21,&quot;points&quot;:65,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5077,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:29,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:22,&quot;points&quot;:94,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6950,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:16,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:24,&quot;points&quot;:184,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:6017,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:23,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:0,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:25,&quot;points&quot;:192,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5871,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:76,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:2},{&quot;match&quot;:26,&quot;points&quot;:53,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5939,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:17,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:27,&quot;points&quot;:89,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5910,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:12,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:28,&quot;points&quot;:87,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5848,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:6,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:29,&quot;points&quot;:8,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5919,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:19,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:2,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:30,&quot;points&quot;:48,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5793,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:75,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:31,&quot;points&quot;:207,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5911,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:51,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:1,&quot;awayTeamGoals&quot;:3},{&quot;match&quot;:32,&quot;points&quot;:133,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5849,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:48,&quot;homeTeamGoals&quot;:4,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:33,&quot;points&quot;:34,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;home&quot;:0,&quot;playtimeSeconds&quot;:5833,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:20,&quot;awayTeamId&quot;:30,&quot;homeTeamGoals&quot;:3,&quot;awayTeamGoals&quot;:1},{&quot;match&quot;:34,&quot;points&quot;:188,&quot;goals&quot;:0,&quot;assists&quot;:1,&quot;home&quot;:1,&quot;playtimeSeconds&quot;:5721,&quot;startingEleven&quot;:true,&quot;homeTeamId&quot;:30,&quot;awayTeamId&quot;:21,&quot;homeTeamGoals&quot;:5,&quot;awayTeamGoals&quot;:0}],&quot;year&quot;:&quot;2023/2024&quot;}]},&quot;playerStats&quot;:{&quot;averagePoints&quot;:0,&quot;f&quot;:false,&quot;firstName&quot;:&quot;Tymoteusz&quot;,&quot;id&quot;:&quot;3020&quot;,&quot;lastName&quot;:&quot;Puchacz&quot;,&quot;marketValue&quot;:5917225,&quot;mvHigh&quot;:5917225,&quot;mvHighDate&quot;:&quot;2024-08-21T00:00:00.000Z&quot;,&quot;mvLow&quot;:500000,&quot;mvLowDate&quot;:&quot;2022-12-22T00:00:00.000Z&quot;,&quot;mvTrend&quot;:1,&quot;upcomingMatches&quot;:[{&quot;day&quot;:&quot;2024-08-24T13:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;14&quot;,&quot;homeTeamName&quot;:&quot;Hoffenheim&quot;,&quot;homeTeamNameShort&quot;:&quot;TSG&quot;,&quot;awayTeamId&quot;:&quot;51&quot;,&quot;awayTeamName&quot;:&quot;Kiel&quot;,&quot;awayTeamNameShort&quot;:&quot;KSV&quot;,&quot;match&quot;:1,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1},{&quot;day&quot;:&quot;2024-08-31T13:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;51&quot;,&quot;homeTeamName&quot;:&quot;Kiel&quot;,&quot;homeTeamNameShort&quot;:&quot;KSV&quot;,&quot;awayTeamId&quot;:&quot;11&quot;,&quot;awayTeamName&quot;:&quot;Wolfsburg&quot;,&quot;awayTeamNameShort&quot;:&quot;WOB&quot;,&quot;match&quot;:2,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1},{&quot;day&quot;:&quot;2024-09-14T16:30:00.000Z&quot;,&quot;homeTeamId&quot;:&quot;51&quot;,&quot;homeTeamName&quot;:&quot;Kiel&quot;,&quot;homeTeamNameShort&quot;:&quot;KSV&quot;,&quot;awayTeamId&quot;:&quot;2&quot;,&quot;awayTeamName&quot;:&quot;Bayern&quot;,&quot;awayTeamNameShort&quot;:&quot;FCB&quot;,&quot;match&quot;:3,&quot;points&quot;:0,&quot;playtimeSeconds&quot;:0,&quot;homeTeamGoals&quot;:-1,&quot;awayTeamGoals&quot;:-1}],&quot;number&quot;:27,&quot;points&quot;:0,&quot;position&quot;:2,&quot;seasons&quot;:[{&quot;seasonId&quot;:&quot;15&quot;,&quot;season&quot;:&quot;2022/2023&quot;,&quot;points&quot;:25,&quot;matches&quot;:1,&quot;startMatches&quot;:1,&quot;secondsPlayed&quot;:3576,&quot;secondsPerGoal&quot;:0,&quot;goals&quot;:0,&quot;assists&quot;:0,&quot;redCards&quot;:0,&quot;yellowCards&quot;:0,&quot;goalFree&quot;:0,&quot;defensivePoints&quot;:0,&quot;offensivePoints&quot;:0,&quot;generalPoints&quot;:0,&quot;teamPoints&quot;:0,&quot;goalKeeperPoints&quot;:0,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0},{&quot;seasonId&quot;:&quot;14&quot;,&quot;season&quot;:&quot;2021/2022&quot;,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0},{&quot;seasonId&quot;:&quot;20&quot;,&quot;season&quot;:&quot;2023/2024&quot;,&quot;defensiveAverage&quot;:0,&quot;offensiveAverage&quot;:0,&quot;generalAverage&quot;:0,&quot;teamAverage&quot;:0,&quot;goalKeeperAverage&quot;:0}],&quot;status&quot;:0,&quot;teamId&quot;:&quot;51&quot;,&quot;userFlags&quot;:0}}"><template shadowroot="open"><style>
   :root,
   * {
     --team-primary-color-15: #28a144;
@@ -470,7 +470,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->12<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 4%, #f5f7f6, 4%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -586,7 +586,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->1<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 3%, #f5f7f6, 3%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -684,7 +684,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->2<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -Infinity%, #f5f7f6, -Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -1%, #f5f7f6, -1%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -782,7 +782,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->3<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 17%, #f5f7f6, 17%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -880,7 +880,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->4<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 14%, #f5f7f6, 14%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -978,7 +978,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->5<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 41%, #f5f7f6, 41%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -1087,7 +1087,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->6<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 10%, #f5f7f6, 10%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1185,7 +1185,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->7<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 23%, #f5f7f6, 23%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -1288,7 +1288,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->8<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 20%, #f5f7f6, 20%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1386,7 +1386,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->9<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 9%, #f5f7f6, 9%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1484,7 +1484,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->12<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 14%, #f5f7f6, 14%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1582,7 +1582,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->13<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 4%, #f5f7f6, 4%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1680,7 +1680,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->14<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 7%, #f5f7f6, 7%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1778,7 +1778,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->15<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 6%, #f5f7f6, 6%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1876,7 +1876,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->16<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 10%, #f5f7f6, 10%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -1974,7 +1974,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->17<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -Infinity%, #f5f7f6, -Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -2%, #f5f7f6, -2%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2072,7 +2072,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->18<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -Infinity%, #f5f7f6, -Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, -3%, #f5f7f6, -3%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2170,7 +2170,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->19<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 15%, #f5f7f6, 15%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -2273,7 +2273,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->20<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 4%, #f5f7f6, 4%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2371,7 +2371,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->21<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 10%, #f5f7f6, 10%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -2474,7 +2474,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->22<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 15%, #f5f7f6, 15%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2572,7 +2572,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->24<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 29%, #f5f7f6, 29%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2670,7 +2670,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->25<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 31%, #f5f7f6, 31%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -2773,7 +2773,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->26<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 8%, #f5f7f6, 8%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2871,7 +2871,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->27<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 14%, #f5f7f6, 14%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -2969,7 +2969,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->28<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 14%, #f5f7f6, 14%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3067,7 +3067,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->29<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 1%, #f5f7f6, 1%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3165,7 +3165,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->30<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 8%, #f5f7f6, 8%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3263,7 +3263,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->31<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 33%, #f5f7f6, 33%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -3366,7 +3366,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->32<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 21%, #f5f7f6, 21%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -3469,7 +3469,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->33<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 5%, #f5f7f6, 5%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3567,7 +3567,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->34<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, Infinity%, #f5f7f6, Infinity%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #25c28b, #25c28b, 30%, #f5f7f6, 30%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--lit-part AEmR7W+R0Ak=--><div><!--lit-part 1zHUqG6bmUY=--> <svg width="14" height="14" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
       <!--lit-part LkJkxQtjjv8=--><svg>
       <path d="M10.025 11.9412H0.190917C0.00612408 11.9412 -0.0700793 12.1774 0.0785173 12.286L8.03415 18.066C8.13893 18.1422 8.28753 18.0946 8.32753 17.9708L10.2059 12.1907C10.246 12.0669 10.1545 11.9412 10.025 11.9412Z" fill="white"/>
@@ -3690,7 +3690,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->1<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, NaN%, #f5f7f6, NaN%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 0%, #f5f7f6, 0%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3791,7 +3791,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->2<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, NaN%, #f5f7f6, NaN%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 0%, #f5f7f6, 0%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
@@ -3892,7 +3892,7 @@ var x = new DOMParser()
           <small class="match-value"><!--lit-part-->3<!--/lit-part-->.</small>
           <small class="match-label">Spieltag</small>
         </div>
-        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, NaN%, #f5f7f6, NaN%, #f5f7f6);"><!--lit-node 5-->
+        <div class="match-bar" style="background:linear-gradient(to top, #ea5f42, #ea5f42, 0%, #f5f7f6, 0%, #f5f7f6);"><!--lit-node 5-->
           <!--lit-part--><!--/lit-part-->
           <!--lit-part--><!--/lit-part-->
         </div>
