@@ -88,7 +88,7 @@ export class PlayerPointsMatchComponent extends LitElement {
    * Is used to determine how to render the bars.
    */
   // @property({ type: Number, attribute: 'max-points' })
-  // private maxPoints: number = 625;
+  // private maxPoints: number = 0;
 
   @property({ type: Object })
   public match: PlayerMatch | PlayerUpcomingMatch;
