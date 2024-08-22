@@ -143,7 +143,7 @@ export class PlayerListItemComponent extends LitElement {
               : html``}
             ${this.data.status ? this.badgeTemplate(String(this.data.status)) : html``}
           </div>
-          <div class="name value">${this.data.knownName ?? this.data.lastName}</div>
+          <div class="name value">${this.data.knownName ?? this.data.playerName}</div>
           <div class="points value">${pointFormatter.format(this.data.totalPoints)}</div>
           <div class="points label">Pts.</div>
           <div class="avg-points value">${this.data.averagePoints}</div>
