@@ -112,7 +112,7 @@ import{s as N,r as k,g as v,p as T,e as y,n as I,t as s}from"./chunks/point-form
       fill: white;
     }
   `;data;render(){return p`
-      <a class="root" href=${`${g}/player/${this.data.lastName}/${this.data.playerId}`}>
+      <a class="root" href=${`${g}/player/${this.data.playerName}/${this.data.playerId}`}>
         <div class="left">
           <img
             class="player-img"
