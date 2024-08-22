@@ -126,7 +126,7 @@ export class PlayerListItemComponent extends LitElement {
 
   protected render(): TemplateResult {
     return html`
-      <a class="root" href=${`${BASE_PATH_WITHOUT_DOMAIN}/player/${this.data.lastName}/${this.data.playerId}`}>
+      <a class="root" href=${`${BASE_PATH_WITHOUT_DOMAIN}/player/${this.data.playerName}/${this.data.playerId}`}>
         <div class="left">
           <img
             class="player-img"
