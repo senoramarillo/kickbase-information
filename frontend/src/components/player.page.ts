@@ -169,15 +169,15 @@ export class PlayerPage extends LitElement {
     `;
   }
 
-  private priceTrendTemplate(trend: number): string {
+  private priceTrendTemplate(trend: number): TemplateResult {
     switch (trend) {
       case 1:
-        return `🠕`;
+        return html`&#8657;`;
       case 2:
-        return `🠗`;
+        return html`&#8659;`;
       default:
       case 0:
-        return `-`;
+        return html`&#8660;`;
     }
   }
 }
