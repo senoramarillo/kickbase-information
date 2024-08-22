@@ -18,7 +18,7 @@ export interface PlayerInfo {
   averagePoints: number;
   totalPoints: number;
   marketValue: number;
-  marketValueTrend: string;
+  marketValueTrend: number;
 }
 
 export class PlayerInfoService {
