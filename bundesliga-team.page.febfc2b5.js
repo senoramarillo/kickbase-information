@@ -127,7 +127,7 @@ import{s as N,r as k,g as v,p as T,e as y,n as I,t as s}from"./chunks/point-form
             ${this.data.position?this.badgeTemplate(v(this.data.position)):p``}
             ${this.data.status?this.badgeTemplate(String(this.data.status)):p``}
           </div>
-          <div class="name value">${this.data.knownName??this.data.playerName}</div>
+          <div class="name value">${this.data.knownName??this.data.lastName}</div>
           <div class="points value">${T.format(this.data.totalPoints)}</div>
           <div class="points label">Pts.</div>
           <div class="avg-points value">${this.data.averagePoints}</div>
