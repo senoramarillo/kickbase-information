@@ -13,6 +13,7 @@ import noProfilePicFallback from '../../images/no_profile_pic.png';
 import './player-badges.ts';
 import './player-points.ts';
 import { priceFormatter } from '../helpers/price-formatter';
+import {PlayerStatus} from "../models/player-status";
 
 @customElement('bkb-player')
 export class PlayerPage extends LitElement {
@@ -158,6 +159,7 @@ export class PlayerPage extends LitElement {
           <bkb-player-badges
             .number=${this.playerInfo.number}
             .position=${this.playerInfo.position}
+            .status=${PlayerStatus[this.playerInfo.status]}
             ?inverted=${this.playerInfo.teamName === 'Dortmund'}
           ></bkb-player-badges>
         </div>

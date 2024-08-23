@@ -6,6 +6,7 @@ import noProfilePicFallback from '../../images/no_profile_pic.png';
 import { BASE_PATH_WITHOUT_DOMAIN } from '../../base-path.mjs';
 import { priceFormatter } from '../helpers/price-formatter';
 import { pointFormatter } from '../helpers/point-formatter';
+import { PlayerStatus } from '../models/player-status';
 import { getPlayerPositionLabel, PlayerPosition } from '../models/player-position';
 
 @customElement('bkb-player-list-item')
@@ -116,7 +117,7 @@ export class PlayerListItemComponent extends LitElement {
     }
 
     .badge text {
-      font-size: 12px;
+      font-size: 9px;
       fill: white;
     }
   `;
@@ -141,7 +142,7 @@ export class PlayerListItemComponent extends LitElement {
             ${this.data.position
               ? this.badgeTemplate(getPlayerPositionLabel(this.data.position as unknown as PlayerPosition))
               : html``}
-            ${this.data.status ? this.badgeTemplate(String(this.data.status)) : html``}
+            ${this.data.status ? this.badgeTemplate(PlayerStatus[this.data.status]) : html``}
           </div>
           <div class="name value">${this.data.knownName ?? this.data.lastName}</div>
           <div class="points value">${pointFormatter.format(this.data.totalPoints)}</div>

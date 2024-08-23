@@ -22,7 +22,7 @@ export class PlayerBadgesComponent extends LitElement {
 
     svg text {
       font-weight: 700;
-      font-size: smaller;
+      font-size: x-small;
     }
   `;
 
