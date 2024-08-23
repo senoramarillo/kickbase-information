@@ -16,10 +16,12 @@ import team_20 from './20.png';
 import team_22 from './22.png';
 import team_24 from './24.png';
 import team_28 from './28.png';
+import team_39 from "./39.png";
 import team_40 from './40.png';
+import team_42 from './42.png';
 import team_43 from './43.png';
 import team_50 from './50.png';
-import team_42 from './42.png';
+import team_51 from "./51.png";
 
 export const teamLogosSmall = {
   team_2,
@@ -40,8 +42,10 @@ export const teamLogosSmall = {
   team_22,
   team_24,
   team_28,
+  team_39,
   team_40,
+  team_42,
   team_43,
   team_50,
-  team_42
+  team_51,
 };
