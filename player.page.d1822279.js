@@ -1,4 +1,4 @@
-import{r as u,s as v,t as c,e as p,n as g}from"./chunks/point-formatter.e755dd0c.js";import{b as h,$ as m}from"./chunks/lit-html.154a0938.js";import{i as y}from"./chunks/player-points.a91c4020.js";import{e as f,i as b,t as w}from"./chunks/directive.7cba340f.js";import{n as k,p as S,P as I}from"./chunks/player-status.41319264.js";/**
+import{r as u,s as v,t as c,e as p,n as g}from"./chunks/point-formatter.e755dd0c.js";import{b as h,$ as m}from"./chunks/lit-html.154a0938.js";import{i as y}from"./chunks/player-points.03407b83.js";import{e as f,i as b,t as w}from"./chunks/directive.7cba340f.js";import{n as k,p as S,P as I}from"./chunks/player-status.41319264.js";/**
  * @license
  * Copyright 2018 Google LLC
  * SPDX-License-Identifier: BSD-3-Clause
