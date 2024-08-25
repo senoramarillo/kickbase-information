@@ -10,7 +10,7 @@ export class BundesligaTableService {
         try {
             const response = await fetch(this.BASE_URL, this.defaultOpts);
             if (!response.ok) {
-                throw new Error(`Failed to fetch data: ${response.statusText}`);
+                throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
             }
 
             const rawTableData: any = await response.json();
@@ -18,7 +18,7 @@ export class BundesligaTableService {
 
         } catch (error) {
             console.error('Error fetching Bundesliga table data:', error);
-            throw error;
+            throw new Error(`Error fetching Bundesliga table data: ${error.message}`);
         }
     }
 
