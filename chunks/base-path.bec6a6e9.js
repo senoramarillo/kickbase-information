@@ -1,0 +1,1 @@
+const t="/kickbase-information",e={BASE_URL:"https://api.better-kickbase.workers.dev/competition/table",DEFAULT_OPTS:{method:"GET",headers:{"Content-Type":"application/json",Accept:"application/json"}}};export{t as B,e as a};
