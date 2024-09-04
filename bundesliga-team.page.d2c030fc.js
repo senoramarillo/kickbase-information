@@ -129,11 +129,11 @@ import{s as N,r as k,g as v,p as T,e as y,n as I,t as s}from"./chunks/point-form
           </div>
           <div class="name value">${this.data.knownName??this.data.lastName}</div>
           <div class="points value">${T.format(this.data.totalPoints)}</div>
-          <div class="points label">Pts.</div>
+          <div class="points label">Pkt.</div>
           <div class="avg-points value">${this.data.averagePoints}</div>
-          <div class="avg-points label">∅ Pts.</div>
+          <div class="avg-points label">∅ Pkt.</div>
           <div class="market-value value">${g.format(this.data.marketValue)}</div>
-          <div class="market-value label">Market value</div>
+          <div class="market-value label">Marktwert</div>
         </div>
       </a>
     `}badgeTemplate(e=""){return e===""?p``:p`
