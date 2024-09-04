@@ -10,6 +10,7 @@
 
   <!-- Placeholder for badges -->
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) 
+[![Github CI](https://github.com/senoramarillo/kickbase-information/actions/workflows/workflow.yml/badge.svg)](https://github.com/senoramarillo/kickbase-information/actions/workflows/workflow.yml)
 </div>
 
 # Architecture
