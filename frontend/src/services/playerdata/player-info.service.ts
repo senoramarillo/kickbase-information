@@ -24,8 +24,11 @@ export interface PlayerInfo {
 export class PlayerInfoService {
   public async getData(playerId: string, leagueId: string = '2335868'): Promise<PlayerInfo> {
     const url: string = `https://api.better-kickbase.workers.dev/leagues/${leagueId}/players/${playerId}/`;
-
     const response: Response = await fetch(url);
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch data: ${response.status} ${response.statusText}`);
+    }
 
     return await response.json();
   }

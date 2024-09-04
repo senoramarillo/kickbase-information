@@ -146,11 +146,11 @@ export class PlayerListItemComponent extends LitElement {
           </div>
           <div class="name value">${this.data.knownName ?? this.data.lastName}</div>
           <div class="points value">${pointFormatter.format(this.data.totalPoints)}</div>
-          <div class="points label">Pts.</div>
+          <div class="points label">Pkt.</div>
           <div class="avg-points value">${this.data.averagePoints}</div>
-          <div class="avg-points label">∅ Pts.</div>
+          <div class="avg-points label">∅ Pkt.</div>
           <div class="market-value value">${priceFormatter.format(this.data.marketValue)}</div>
-          <div class="market-value label">Market value</div>
+          <div class="market-value label">Marktwert</div>
         </div>
       </a>
     `;

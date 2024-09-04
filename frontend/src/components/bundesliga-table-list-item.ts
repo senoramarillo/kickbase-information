@@ -74,11 +74,11 @@ export class BundesligaPlayerListItemComponent extends LitElement {
         </div>
         <div class="goal-difference">
           <div class="goal-difference value">${this.data.goadDifference}</div>
-          <div class="goal-difference label">GD</div>
+          <div class="goal-difference label">TD</div>
         </div>
         <div class="points">
           <div class="points value">${this.data.points}</div>
-          <div class="points label">Pts.</div>
+          <div class="points label">Pkt.</div>
         </div>
       </a>
     `;
