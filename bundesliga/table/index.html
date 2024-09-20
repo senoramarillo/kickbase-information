@@ -96,7 +96,7 @@ var x = new DOMParser()
 (!x || !x.shadowRoot) && g();
 </script></head>
   <body style="background-color: #e8edf1;  padding: 1rem;">
-    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="Z1eKLvY" component-url="/kickbase-information/bundesliga-table.page.9932537f.js" ssr="" client="idle" before-hydration-url="/kickbase-information/chunks/astro_scripts/before-hydration.js.faae8adf.js" opts="{&quot;name&quot;:&quot;BundesligaTablePage&quot;,&quot;value&quot;:true}" await-children=""><bkb-bundesliga-table server-json-data="{&quot;matchDay&quot;:3,&quot;currentMatchDay&quot;:3,&quot;teams&quot;:[{&quot;goadDifference&quot;:4,&quot;matches&quot;:3,&quot;points&quot;:7,&quot;place&quot;:2,&quot;teamId&quot;:&quot;3&quot;,&quot;teamName&quot;:&quot;Dortmund&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:4,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:4,&quot;teamId&quot;:&quot;50&quot;,&quot;teamName&quot;:&quot;Heidenheim&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:-1,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:13,&quot;teamId&quot;:&quot;15&quot;,&quot;teamName&quot;:&quot;M&#39;gladbach&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:0,&quot;matches&quot;:3,&quot;points&quot;:4,&quot;place&quot;:10,&quot;teamId&quot;:&quot;9&quot;,&quot;teamName&quot;:&quot;Stuttgart&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:0,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:12,&quot;teamId&quot;:&quot;11&quot;,&quot;teamName&quot;:&quot;Wolfsburg&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:6,&quot;teamId&quot;:&quot;4&quot;,&quot;teamName&quot;:&quot;Frankfurt&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:7,&quot;teamId&quot;:&quot;5&quot;,&quot;teamName&quot;:&quot;Freiburg&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:-4,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:16,&quot;teamId&quot;:&quot;24&quot;,&quot;teamName&quot;:&quot;Bochum&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:-4,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:14,&quot;teamId&quot;:&quot;14&quot;,&quot;teamName&quot;:&quot;Hoffenheim&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:3,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:5,&quot;teamId&quot;:&quot;7&quot;,&quot;teamName&quot;:&quot;Leverkusen&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:2,&quot;matches&quot;:3,&quot;points&quot;:7,&quot;place&quot;:3,&quot;teamId&quot;:&quot;43&quot;,&quot;teamName&quot;:&quot;Leipzig&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:5,&quot;place&quot;:9,&quot;teamId&quot;:&quot;40&quot;,&quot;teamName&quot;:&quot;Union Berlin&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:-8,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:18,&quot;teamId&quot;:&quot;51&quot;,&quot;teamName&quot;:&quot;Kiel&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:8,&quot;matches&quot;:3,&quot;points&quot;:9,&quot;place&quot;:1,&quot;teamId&quot;:&quot;2&quot;,&quot;teamName&quot;:&quot;Bayern&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:-2,&quot;matches&quot;:3,&quot;points&quot;:4,&quot;place&quot;:11,&quot;teamId&quot;:&quot;13&quot;,&quot;teamName&quot;:&quot;Augsburg&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:-5,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:17,&quot;teamId&quot;:&quot;39&quot;,&quot;teamName&quot;:&quot;St. Pauli&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:-1,&quot;matches&quot;:3,&quot;points&quot;:2,&quot;place&quot;:15,&quot;teamId&quot;:&quot;18&quot;,&quot;teamName&quot;:&quot;Mainz&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:5,&quot;place&quot;:8,&quot;teamId&quot;:&quot;10&quot;,&quot;teamName&quot;:&quot;Bremen&quot;,&quot;trend&quot;:1}]}"><template shadowroot="open"><!--lit-part 2ZpZeWOl1O4=-->
+    <style>astro-island,astro-slot{display:contents}</style><script>(self.Astro=self.Astro||{}).idle=t=>{const e=async()=>{await(await t())()};"requestIdleCallback"in window?window.requestIdleCallback(e):setTimeout(e,200)},window.dispatchEvent(new Event("astro:idle"));var l;{const c={0:t=>t,1:t=>JSON.parse(t,o),2:t=>new RegExp(t),3:t=>new Date(t),4:t=>new Map(JSON.parse(t,o)),5:t=>new Set(JSON.parse(t,o)),6:t=>BigInt(t),7:t=>new URL(t),8:t=>new Uint8Array(JSON.parse(t)),9:t=>new Uint16Array(JSON.parse(t)),10:t=>new Uint32Array(JSON.parse(t))},o=(t,s)=>{if(t===""||!Array.isArray(s))return s;const[e,n]=s;return e in c?c[e](n):void 0};customElements.get("astro-island")||customElements.define("astro-island",(l=class extends HTMLElement{constructor(){super(...arguments);this.hydrate=()=>{if(!this.hydrator||this.parentElement&&this.parentElement.closest("astro-island[ssr]"))return;const s=this.querySelectorAll("astro-slot"),e={},n=this.querySelectorAll("template[data-astro-template]");for(const r of n){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("data-astro-template")||"default"]=r.innerHTML,r.remove())}for(const r of s){const i=r.closest(this.tagName);!i||!i.isSameNode(this)||(e[r.getAttribute("name")||"default"]=r.innerHTML)}const a=this.hasAttribute("props")?JSON.parse(this.getAttribute("props"),o):{};this.hydrator(this)(this.Component,a,e,{client:this.getAttribute("client")}),this.removeAttribute("ssr"),window.removeEventListener("astro:hydrate",this.hydrate),window.dispatchEvent(new CustomEvent("astro:hydrate"))}}connectedCallback(){!this.hasAttribute("await-children")||this.firstChild?this.childrenConnectedCallback():new MutationObserver((s,e)=>{e.disconnect(),this.childrenConnectedCallback()}).observe(this,{childList:!0})}async childrenConnectedCallback(){window.addEventListener("astro:hydrate",this.hydrate);let s=this.getAttribute("before-hydration-url");s&&await import(s),this.start()}start(){const s=JSON.parse(this.getAttribute("opts")),e=this.getAttribute("client");if(Astro[e]===void 0){window.addEventListener(`astro:${e}`,()=>this.start(),{once:!0});return}Astro[e](async()=>{const n=this.getAttribute("renderer-url"),[a,{default:r}]=await Promise.all([import(this.getAttribute("component-url")),n?import(n):()=>()=>{}]),i=this.getAttribute("component-export")||"default";if(!i.includes("."))this.Component=a[i];else{this.Component=a;for(const d of i.split("."))this.Component=this.Component[d]}return this.hydrator=r,this.hydrate},s,this)}attributeChangedCallback(){this.hydrator&&this.hydrate()}},l.observedAttributes=["props"],l))}</script><astro-island uid="ZzNQTK" component-url="/kickbase-information/bundesliga-table.page.9932537f.js" ssr="" client="idle" before-hydration-url="/kickbase-information/chunks/astro_scripts/before-hydration.js.faae8adf.js" opts="{&quot;name&quot;:&quot;BundesligaTablePage&quot;,&quot;value&quot;:true}" await-children=""><bkb-bundesliga-table server-json-data="{&quot;matchDay&quot;:4,&quot;currentMatchDay&quot;:4,&quot;teams&quot;:[{&quot;goadDifference&quot;:-3,&quot;matches&quot;:4,&quot;points&quot;:4,&quot;place&quot;:12,&quot;teamId&quot;:&quot;13&quot;,&quot;teamName&quot;:&quot;Augsburg&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:0,&quot;matches&quot;:4,&quot;points&quot;:5,&quot;place&quot;:10,&quot;teamId&quot;:&quot;18&quot;,&quot;teamName&quot;:&quot;Mainz&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:-4,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:16,&quot;teamId&quot;:&quot;24&quot;,&quot;teamName&quot;:&quot;Bochum&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:-8,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:18,&quot;teamId&quot;:&quot;51&quot;,&quot;teamName&quot;:&quot;Kiel&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:5,&quot;place&quot;:9,&quot;teamId&quot;:&quot;40&quot;,&quot;teamName&quot;:&quot;Union Berlin&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:-4,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:15,&quot;teamId&quot;:&quot;14&quot;,&quot;teamName&quot;:&quot;Hoffenheim&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:5,&quot;place&quot;:8,&quot;teamId&quot;:&quot;10&quot;,&quot;teamName&quot;:&quot;Bremen&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:8,&quot;matches&quot;:3,&quot;points&quot;:9,&quot;place&quot;:1,&quot;teamId&quot;:&quot;2&quot;,&quot;teamName&quot;:&quot;Bayern&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:4,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:4,&quot;teamId&quot;:&quot;50&quot;,&quot;teamName&quot;:&quot;Heidenheim&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:6,&quot;teamId&quot;:&quot;5&quot;,&quot;teamName&quot;:&quot;Freiburg&quot;,&quot;trend&quot;:1},{&quot;goadDifference&quot;:1,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:7,&quot;teamId&quot;:&quot;4&quot;,&quot;teamName&quot;:&quot;Frankfurt&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:-1,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:14,&quot;teamId&quot;:&quot;15&quot;,&quot;teamName&quot;:&quot;M&#39;gladbach&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:3,&quot;matches&quot;:3,&quot;points&quot;:6,&quot;place&quot;:5,&quot;teamId&quot;:&quot;7&quot;,&quot;teamName&quot;:&quot;Leverkusen&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:0,&quot;matches&quot;:3,&quot;points&quot;:3,&quot;place&quot;:13,&quot;teamId&quot;:&quot;11&quot;,&quot;teamName&quot;:&quot;Wolfsburg&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:0,&quot;matches&quot;:3,&quot;points&quot;:4,&quot;place&quot;:11,&quot;teamId&quot;:&quot;9&quot;,&quot;teamName&quot;:&quot;Stuttgart&quot;,&quot;trend&quot;:2},{&quot;goadDifference&quot;:4,&quot;matches&quot;:3,&quot;points&quot;:7,&quot;place&quot;:2,&quot;teamId&quot;:&quot;3&quot;,&quot;teamName&quot;:&quot;Dortmund&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:-5,&quot;matches&quot;:3,&quot;points&quot;:0,&quot;place&quot;:17,&quot;teamId&quot;:&quot;39&quot;,&quot;teamName&quot;:&quot;St. Pauli&quot;,&quot;trend&quot;:0},{&quot;goadDifference&quot;:2,&quot;matches&quot;:3,&quot;points&quot;:7,&quot;place&quot;:3,&quot;teamId&quot;:&quot;43&quot;,&quot;teamName&quot;:&quot;Leipzig&quot;,&quot;trend&quot;:0}]}"><template shadowroot="open"><!--lit-part 2ZpZeWOl1O4=-->
       <div class="root">
         <!--lit-part--><!--lit-part c5AC5l/+O8Q=-->
             <bkb-bundesliga-table-list-item ><!--lit-node 0--><template shadowroot="open"><style>
@@ -496,14 +496,14 @@ var x = new DOMParser()
       color: #9ca4a8;
     }
   </style><!--lit-part 7/FnyAkJIYk=-->
-      <a class="root" href="/kickbase-information/bundesliga/team/Frankfurt"><!--lit-node 0-->
+      <a class="root" href="/kickbase-information/bundesliga/team/Freiburg"><!--lit-node 0-->
         <div class="place">
           <!--lit-part 9FWI6pBrn9g=--><span class="invisible">1</span><!--/lit-part--><!--lit-part-->6<!--/lit-part-->
         </div>
         <div class="team-logo">
-          <img src="/kickbase-information/assets/4.390aa2e6.png" /><!--lit-node 5-->
+          <img src="/kickbase-information/assets/5.3c60513d.png" /><!--lit-node 5-->
         </div>
-        <div class="team-name"><!--lit-part-->Frankfurt<!--/lit-part--></div>
+        <div class="team-name"><!--lit-part-->Freiburg<!--/lit-part--></div>
         <div class="matches-played">
           <div class="matches-played value"><!--lit-part-->3<!--/lit-part--></div>
           <div class="matches-played label">gesp.</div>
@@ -566,14 +566,14 @@ var x = new DOMParser()
       color: #9ca4a8;
     }
   </style><!--lit-part 7/FnyAkJIYk=-->
-      <a class="root" href="/kickbase-information/bundesliga/team/Freiburg"><!--lit-node 0-->
+      <a class="root" href="/kickbase-information/bundesliga/team/Frankfurt"><!--lit-node 0-->
         <div class="place">
           <!--lit-part 9FWI6pBrn9g=--><span class="invisible">1</span><!--/lit-part--><!--lit-part-->7<!--/lit-part-->
         </div>
         <div class="team-logo">
-          <img src="/kickbase-information/assets/5.3c60513d.png" /><!--lit-node 5-->
+          <img src="/kickbase-information/assets/4.390aa2e6.png" /><!--lit-node 5-->
         </div>
-        <div class="team-name"><!--lit-part-->Freiburg<!--/lit-part--></div>
+        <div class="team-name"><!--lit-part-->Frankfurt<!--/lit-part--></div>
         <div class="matches-played">
           <div class="matches-played value"><!--lit-part-->3<!--/lit-part--></div>
           <div class="matches-played label">gesp.</div>
@@ -776,9 +776,79 @@ var x = new DOMParser()
       color: #9ca4a8;
     }
   </style><!--lit-part 7/FnyAkJIYk=-->
-      <a class="root" href="/kickbase-information/bundesliga/team/Stuttgart"><!--lit-node 0-->
+      <a class="root" href="/kickbase-information/bundesliga/team/Mainz"><!--lit-node 0-->
         <div class="place">
           <!--lit-part--><!--/lit-part--><!--lit-part-->10<!--/lit-part-->
+        </div>
+        <div class="team-logo">
+          <img src="/kickbase-information/assets/18.bb2586fc.png" /><!--lit-node 5-->
+        </div>
+        <div class="team-name"><!--lit-part-->Mainz<!--/lit-part--></div>
+        <div class="matches-played">
+          <div class="matches-played value"><!--lit-part-->4<!--/lit-part--></div>
+          <div class="matches-played label">gesp.</div>
+        </div>
+        <div class="goal-difference">
+          <div class="goal-difference value"><!--lit-part-->0<!--/lit-part--></div>
+          <div class="goal-difference label">TD</div>
+        </div>
+        <div class="points">
+          <div class="points value"><!--lit-part-->5<!--/lit-part--></div>
+          <div class="points label">Pkt.</div>
+        </div>
+      </a>
+    <!--/lit-part--></template></bkb-bundesliga-table-list-item>
+          <!--/lit-part--><!--lit-part c5AC5l/+O8Q=-->
+            <bkb-bundesliga-table-list-item ><!--lit-node 0--><template shadowroot="open"><style>
+    .root {
+      display: flex;
+      background-color: white;
+      margin-top: 0.5rem;
+      border-radius: 0.5rem;
+      height: 64px;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 1rem;
+      cursor: pointer;
+      color: black;
+    }
+
+    .root:link,
+    .root:visited,
+    .root:hover,
+    .root:active {
+      text-decoration: none;
+    }
+
+    .team-name {
+      flex-grow: 1;
+    }
+
+    .team-logo {
+      display: flex;
+      justify-content: center;
+      max-height: 70%;
+      width: 128px;
+    }
+
+    .team-logo > img {
+      object-fit: contain;
+    }
+
+    .root > *:not(:first-child) {
+      padding-left: 1rem;
+    }
+
+    .invisible {
+      visibility: hidden;
+    }
+    .label {
+      color: #9ca4a8;
+    }
+  </style><!--lit-part 7/FnyAkJIYk=-->
+      <a class="root" href="/kickbase-information/bundesliga/team/Stuttgart"><!--lit-node 0-->
+        <div class="place">
+          <!--lit-part--><!--/lit-part--><!--lit-part-->11<!--/lit-part-->
         </div>
         <div class="team-logo">
           <img src="/kickbase-information/assets/9.dec4e08a.png" /><!--lit-node 5-->
@@ -848,18 +918,18 @@ var x = new DOMParser()
   </style><!--lit-part 7/FnyAkJIYk=-->
       <a class="root" href="/kickbase-information/bundesliga/team/Augsburg"><!--lit-node 0-->
         <div class="place">
-          <!--lit-part--><!--/lit-part--><!--lit-part-->11<!--/lit-part-->
+          <!--lit-part--><!--/lit-part--><!--lit-part-->12<!--/lit-part-->
         </div>
         <div class="team-logo">
           <img src="/kickbase-information/assets/13.d1f5ae18.png" /><!--lit-node 5-->
         </div>
         <div class="team-name"><!--lit-part-->Augsburg<!--/lit-part--></div>
         <div class="matches-played">
-          <div class="matches-played value"><!--lit-part-->3<!--/lit-part--></div>
+          <div class="matches-played value"><!--lit-part-->4<!--/lit-part--></div>
           <div class="matches-played label">gesp.</div>
         </div>
         <div class="goal-difference">
-          <div class="goal-difference value"><!--lit-part-->-2<!--/lit-part--></div>
+          <div class="goal-difference value"><!--lit-part-->-3<!--/lit-part--></div>
           <div class="goal-difference label">TD</div>
         </div>
         <div class="points">
@@ -918,7 +988,7 @@ var x = new DOMParser()
   </style><!--lit-part 7/FnyAkJIYk=-->
       <a class="root" href="/kickbase-information/bundesliga/team/Wolfsburg"><!--lit-node 0-->
         <div class="place">
-          <!--lit-part--><!--/lit-part--><!--lit-part-->12<!--/lit-part-->
+          <!--lit-part--><!--/lit-part--><!--lit-part-->13<!--/lit-part-->
         </div>
         <div class="team-logo">
           <img src="/kickbase-information/assets/11.966c1542.png" /><!--lit-node 5-->
@@ -988,7 +1058,7 @@ var x = new DOMParser()
   </style><!--lit-part 7/FnyAkJIYk=-->
       <a class="root" href="/kickbase-information/bundesliga/team/M&#39;gladbach"><!--lit-node 0-->
         <div class="place">
-          <!--lit-part--><!--/lit-part--><!--lit-part-->13<!--/lit-part-->
+          <!--lit-part--><!--/lit-part--><!--lit-part-->14<!--/lit-part-->
         </div>
         <div class="team-logo">
           <img src="/kickbase-information/assets/15.1de1fa14.png" /><!--lit-node 5-->
@@ -1058,7 +1128,7 @@ var x = new DOMParser()
   </style><!--lit-part 7/FnyAkJIYk=-->
       <a class="root" href="/kickbase-information/bundesliga/team/Hoffenheim"><!--lit-node 0-->
         <div class="place">
-          <!--lit-part--><!--/lit-part--><!--lit-part-->14<!--/lit-part-->
+          <!--lit-part--><!--/lit-part--><!--lit-part-->15<!--/lit-part-->
         </div>
         <div class="team-logo">
           <img src="/kickbase-information/assets/14.5d4a8ad3.png" /><!--lit-node 5-->
@@ -1074,76 +1144,6 @@ var x = new DOMParser()
         </div>
         <div class="points">
           <div class="points value"><!--lit-part-->3<!--/lit-part--></div>
-          <div class="points label">Pkt.</div>
-        </div>
-      </a>
-    <!--/lit-part--></template></bkb-bundesliga-table-list-item>
-          <!--/lit-part--><!--lit-part c5AC5l/+O8Q=-->
-            <bkb-bundesliga-table-list-item ><!--lit-node 0--><template shadowroot="open"><style>
-    .root {
-      display: flex;
-      background-color: white;
-      margin-top: 0.5rem;
-      border-radius: 0.5rem;
-      height: 64px;
-      align-items: center;
-      justify-content: space-between;
-      padding: 0 1rem;
-      cursor: pointer;
-      color: black;
-    }
-
-    .root:link,
-    .root:visited,
-    .root:hover,
-    .root:active {
-      text-decoration: none;
-    }
-
-    .team-name {
-      flex-grow: 1;
-    }
-
-    .team-logo {
-      display: flex;
-      justify-content: center;
-      max-height: 70%;
-      width: 128px;
-    }
-
-    .team-logo > img {
-      object-fit: contain;
-    }
-
-    .root > *:not(:first-child) {
-      padding-left: 1rem;
-    }
-
-    .invisible {
-      visibility: hidden;
-    }
-    .label {
-      color: #9ca4a8;
-    }
-  </style><!--lit-part 7/FnyAkJIYk=-->
-      <a class="root" href="/kickbase-information/bundesliga/team/Mainz"><!--lit-node 0-->
-        <div class="place">
-          <!--lit-part--><!--/lit-part--><!--lit-part-->15<!--/lit-part-->
-        </div>
-        <div class="team-logo">
-          <img src="/kickbase-information/assets/18.bb2586fc.png" /><!--lit-node 5-->
-        </div>
-        <div class="team-name"><!--lit-part-->Mainz<!--/lit-part--></div>
-        <div class="matches-played">
-          <div class="matches-played value"><!--lit-part-->3<!--/lit-part--></div>
-          <div class="matches-played label">gesp.</div>
-        </div>
-        <div class="goal-difference">
-          <div class="goal-difference value"><!--lit-part-->-1<!--/lit-part--></div>
-          <div class="goal-difference label">TD</div>
-        </div>
-        <div class="points">
-          <div class="points value"><!--lit-part-->2<!--/lit-part--></div>
           <div class="points label">Pkt.</div>
         </div>
       </a>
